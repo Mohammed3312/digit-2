@@ -1,0 +1,14 @@
+.cursor-pointer {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width:850px){
+    .fix-flex{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .gap-small{
+        gap: 1rem;
+    }
+  }

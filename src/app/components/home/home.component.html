@@ -1,0 +1,11 @@
+
+@if (isLoading) {
+    <app-hero></app-hero>
+    <app-about [data$]="aboutData$"></app-about>
+    <!-- we should do what we did in about with testimonial but this time with @for -->
+    <app-testimonials></app-testimonials>
+    <app-contact></app-contact>
+}@else {
+    <app-loader></app-loader>
+}
+

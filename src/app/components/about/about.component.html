@@ -1,0 +1,18 @@
+<section class="py-3 py-md-5">
+    <div class="container">
+      <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+        <div class="col-12 col-lg-6 col-xl-5 animate__animated animate__bounceInLeft">
+          <img class="img-fluid rounded w-100" loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNBZYyZckr-HltuVtM363ufDAjEs3wAY7h-g&s" alt="About 1">
+        </div>
+        <div class="col-12 col-lg-6 col-xl-7" *ngIf="data$ | async as data">
+          <div class="row justify-content-xl-center">
+            <div class="col-12 col-xl-11 animate__animated animate__bounceInRight">
+              <h2 class="mb-3">Who Are We?</h2>
+              <p class="lead fs-4 text-secondary mb-3">{{data.p1}}</p>
+              <p class="mb-5">{{data.p2}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

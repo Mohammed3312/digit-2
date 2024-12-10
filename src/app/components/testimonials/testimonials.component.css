@@ -1,0 +1,95 @@
+section {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+ 
+  /* Controls */
+  .carousel-control-next {
+      margin: 0 3em;
+  }
+
+  i.bi-arrow-right,
+ i.bi-arrow-left {
+    background: none;
+    border: 2px solid #ac2423;
+    color: #ac2423;
+    padding: 5px;
+    border-radius: 100%;
+    transition: background .6s ease;
+  }
+
+  i.bi-arrow-right:hover,
+  i.bi-arrow-left:hover {
+      background: #ac2423;
+      color: white;
+  }
+
+  /* Indicators */
+  .carousel-indicators {
+      justify-content: flex-start;
+     transform: translate(-40px, 50px);
+  }
+
+  .carousel-indicators [data-bs-target] {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      border: 2px solid #ac2423;
+  }
+
+  .carousel-indicators .active {
+      opacity: 1;
+      background-color:  #ac2423;
+  }
+
+  /* Control buttons */
+  .control-btn {
+      position: absolute;
+      bottom: 17%;
+      right: 10em;
+  }
+  .carousel-control-next, 
+  .carousel-control-prev {
+      top: 1em;
+      left: 3em;
+  }
+
+  .testimonial-text {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      column-gap: 20px; 
+  }
+
+  .wow {
+      position: relative;
+      grid-column: span 2;
+  }
+
+  .carousel-landmark {
+      grid-column: span 3;
+  }
+
+  @media screen and (max-width: 576px) {
+      .testimonial-text {
+          margin-top: 50px;
+      row-gap: 50px;
+      
+  }
+      .wow {
+      grid-column: span 5;
+  }
+
+  .carousel-landmark {  
+      grid-column: span 5;
+  }
+
+  .control-btn{
+    display: none;
+  }
+  }
